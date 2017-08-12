@@ -1,0 +1,14 @@
+{% extends 'mixit/base.html' %}
+
+{% block content %}
+{% if answer1 %}
+  <img src="{{ answer1.pic_uri }}">
+{% endif %}
+{% if answer2 %}
+  <p>{{ answer2.text }}<p>
+{% endif %}
+
+<br>
+
+Ustedes que crean ahi, <br><a href="new">¿ven la tormenta?, ¿la padecen?, ¿resisten?, ¿se rebelan?</a>
+{% endblock %}

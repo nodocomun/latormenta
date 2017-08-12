@@ -1,0 +1,7 @@
+db.sqlite3
+latormenta/local_settings.py
+*.pyc
+*.swp
+*.swo
+
+
