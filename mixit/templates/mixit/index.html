@@ -2,11 +2,23 @@
 
 {% block content %}
 {% if answer1 %}
-  <img src="{{ answer1.pic_uri }}">
-{% endif %}
-{% if answer2 %}
-  <p>{{ answer2.text }}<p>
-{% endif %}
+
+<div class="container">
+		
+	<div class="profoto">
+
+	  <img src="{{ answer1.pic_uri }}">
+	{% endif %}
+	{% if answer2 %}
+
+		<div class="texto">
+		  <p>{{ answer2.text }}<p>
+		</div>
+	{% endif %}
+
+	</div>
+
+</div>
 
 <br>
 
