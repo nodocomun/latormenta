@@ -1,9 +1,12 @@
 {% extends 'mixit/base.html' %}
 
 {% block content %}
-    <h1>Y ustedes, como ven la tormenta?</h1>
+
+<div style="position:fixed;top:400px;left:50%;transform:translate(-50%,-300px);">
+    <h1>Y ustedes, ¿cómo ven la tormenta?</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-default">Guardar</button>
     </form>
+</div>
 {% endblock %}
