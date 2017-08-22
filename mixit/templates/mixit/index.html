@@ -2,25 +2,29 @@
 
 {% block content %}
 {% if answer1 %}
-
-<div class="container">
 		
-	<div class="profoto">
 
-	  <img src="{{ answer1.pic_uri }}">
+
+
+<div style="position:fixed;top:400px;left:50%;transform:translate(-50%,-300px);">
+
+<div style="width:auto;background-color:#FFFFFF;border:1px;border-style:solid;border-color:#999999;padding-bottom:10px;padding-left:10px;padding-top:10px;padding-right:10px;">
+
+	  <img src="{{ answer1.pic_uri }}" style="max-width:850px;max-height:400px;min-width:200px;display:block;" />
+	
 	{% endif %}
 	{% if answer2 %}
 
-		<div class="texto">
-		  <p>{{ answer2.text }}<p>
-		</div>
+	<p>{{ answer2.text }}<p>
+		
 	{% endif %}
-
-	</div>
 
 </div>
 
-<br>
+<form style="position:fixed;left:50%;transform:translate(-50%);margin-top:20px;"><input type="submit" name="Submit" value="¡Más truenos!"></form>
 
-Ustedes que crean ahi, <br><a href="new">¿ven la tormenta?, ¿la padecen?, ¿resisten?, ¿se rebelan?</a>
+<br>
+<p style="position:fixed;left:50%;transform:translate(-50%);margin-top:30px;"><a href="new">¡Súmale rayos!</a></p>
 {% endblock %}
+</div>
+
