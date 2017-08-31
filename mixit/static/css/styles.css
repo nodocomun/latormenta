@@ -1,9 +1,8 @@
 /* CSS Document */
 
 body {
-	/*background-image:   url("../images_randomness/linea.jpg");*/
-		background-color:#dcdcdc;
-
+	background-image:   url("/static/img/rain.gif");
+	background-color:#dcdcdc;
 }
 
 .container{

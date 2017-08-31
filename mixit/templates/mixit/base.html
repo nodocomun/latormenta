@@ -2,10 +2,7 @@
 <html>
     <head>
         <title>La Tormenta Digital</title>
-       
-	<!--
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-	-->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
 	<style>
 		body {
 		background-color:#dcdcdc;
@@ -13,8 +10,9 @@
 	</style>
     </head>
     <body>
-        <div style="position:fixed;top:30px;left:50%;transform:translate(-50%,-25px);">
-            <h1><a href="/"><img src="tormenta.svg" /></a></h1>
+        <div>
+            <!-- style="position:fixed;top:30px;left:50%;transform:translate(-50%,-25px);"> -->
+            <h1><a href="/"><img src="{% static  'img/tormenta.svg' %}" width=50% height=50%/></a></h1>
         </div>
         <div>
             <div>
