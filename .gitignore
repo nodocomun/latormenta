@@ -4,4 +4,5 @@ latormenta/local_settings.py
 *.swp
 *.swo
 
+venv/ *
 
